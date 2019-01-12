@@ -1,0 +1,34 @@
+<div id="mc" class="mainContainer">
+<div class="header"> 
+
+        <div class="scoresDiv">
+        <h3 class="littleHeader">Score  </h3>
+        <p> {{score}} </p>
+        </div>
+
+        <div class="timerDiv">
+        <h3 class="littleHeader">Timer</h3>
+        <p> {{timer}} Sec </p>
+        </div>
+      </div>
+ <br>
+<div class="gameContainer" >
+    <div id="preGame">
+    <div class="preImg" >
+    <img class="mainImg img-fluid" src="https://www.desktopbackground.org/p/2011/09/16/266786_gallery-for-st-louis-blues-desktop-wallpapers_1600x1200_h.jpg" >
+    </div>
+    <div class="startBtn">
+      <br>
+        <button class="btn btn-primary" (click)="startGame()">Start</button>
+    </div>
+</div>
+    <div id="boardGame" style="display: none" >
+        <br>
+        <div id="board">
+        <div id="div{{x}}" class="card" *ngFor="let img of images; let x = index" (click)="pickCard(x)" >
+            <img id={{x}} class="cardImg" src='{{img.image}}' height="80px" style="visibility:hidden" >         
+        </div>
+         </div>
+    </div>
+</div>
+</div>

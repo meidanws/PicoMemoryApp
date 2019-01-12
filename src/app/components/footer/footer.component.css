@@ -1,0 +1,25 @@
+.footer{    
+    bottom: 0 !important;
+    position: fixed;
+    height: 150px;
+    width: 250px;
+    left:5px;
+}
+
+.myfooter{
+    width: 50%;
+    float: left;
+    bottom: 5px;
+    position: fixed;
+}
+
+@media screen and (min-width: 580px){
+  .myfooter{
+      margin-top: 50px;
+      position: relative;
+      width: 40%;
+  }
+}
+
+
+

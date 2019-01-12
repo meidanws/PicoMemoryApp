@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Mali');
+h1{
+    font-family: 'Mali', cursive;
+}
+
+.mainHeader{
+    text-align: center;
+    color: #FEC21F;
+    margin-top:30px;
+}
+
